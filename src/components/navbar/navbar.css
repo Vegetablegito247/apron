@@ -1,0 +1,98 @@
+nav {
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: var(--primaryColor);
+}
+
+.navCont,
+.navLogo,
+.business-cont,
+.ul-bus,
+.ul-abt,
+.about,
+.log-and-start,
+.log,
+.start a {
+    display: flex;
+    align-items: center;
+}
+
+.navCont {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.nav-logo h3 {
+    font-size: 40px;
+    font-family: var(--fontHead);
+}
+
+.business-cont {
+    column-gap: 60px;
+}
+
+.ul-bus, .ul-abt {
+    list-style: none;
+    column-gap: 20px;
+    font-size: 16px;
+}
+
+.bus-list a, .prc-list a, .abt-list a {
+    text-decoration: none;
+    color: var(--txtColorTxt);
+    padding-bottom: 5px;
+    transition: border linear .7s;
+    position: relative;
+}
+
+.bus-list a, .prc-list a, .abt-list a {
+    text-decoration: none;
+    color: var(--txtColorTxt);
+    padding-bottom: 5px;
+    transition: border linear .7s;
+}
+
+.bus-list a.active, .prc-list a.active, .abt-list a.active {
+    border-bottom: 2px solid var(--txtColorTxt);
+}
+
+.bus-list a::after, .prc-list a::after, .abt-list a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--txtColorTxt);
+    transition: width.7s ease ;
+}
+
+.bus-list a:hover::after, .prc-list a:hover::after, .abt-list a:hover::after {
+    width: 100%;
+}
+
+.log-and-start {
+    column-gap: 20px;
+    font-size: 16px;
+}
+
+.log a {
+    text-decoration: none;
+    color: var(--txtColorTxt);
+}
+
+.start a {
+    justify-content: center;
+    color: var(--txtColorBtn);
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--accentColor);
+}

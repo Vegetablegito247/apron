@@ -1,0 +1,36 @@
+footer {
+    width: 100%;
+    padding: 3rem;
+    background-color: var(--txtColorTxt);
+}
+
+.footer-cont {
+    width: 100%;
+    border-top: 2px solid var(--txtColorBtn);
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 8fr;
+    column-gap: 40px;
+}
+
+.foot-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.foot-nav {
+    text-decoration: none;
+    color: var(--txtColorBtn);
+    font-weight: 600;
+    width: 100px;
+}
+
+.foot-nav span {
+    font-size: 16px;
+}
+
+.foot-list p {
+    color: #8E8E8E;
+    font-size: 14px;
+}

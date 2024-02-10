@@ -1,0 +1,129 @@
+.land-head {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    column-gap: 60px;
+    padding: 4rem 3rem;
+    font-family: var(--fontTxt);
+}
+
+.land-head-title,
+.land-head-img {
+    width: 50%;
+    height: 100%;
+}
+
+.land-head-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.land-head-title {
+    border-bottom: 2px dotted var(--txtColorTxt);
+}
+
+.head-title-cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.title-middle-head h1, .get-apron-head h1 {
+    color: var(--txtColorTxt);
+    font-family: var(--fontHead) !important;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.start-btn, .get-apron-btn {
+    width: 400px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--txtColorBtn);
+    text-decoration: none;
+    background-color: var(--accentColor);
+}
+
+.start-btn span, .get-apron-btn span {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: var(--fontHead);
+}
+
+.head-img,
+.head-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.head-img img {
+    object-fit: cover;
+}
+
+.head-img-title {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    color: var(--txtColorBtn);
+    transition: .7s;
+    transition: width 0.7s, height 0.7s, background-color 0.7s, right 0.7s, bottom 0.7s, padding 0.7s, color 0.7s;
+    cursor: pointer;
+}
+
+.land-head-img:hover .head-img-title {
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    animation: circular .7s forwards;
+}
+
+@keyframes circular {
+    0% {
+        border-radius: 50%;
+    }
+    25% {
+        border-radius: 50%;
+    }
+    50% {
+        border-radius: 50%;
+    }
+    75% {
+        border-radius: 50%;
+    }
+    100% {
+        border-radius: 0;
+    }
+}
+
+.land-head-img:hover .head-img-title h3 {
+    font-size: 30px;
+}
+
+.grid-head {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    ---toothSize: 14px;
+    border-image-source: url(https://cdn.getapron.com/website/apron-landing-owners/sawtooth.svg);
+    border-image-repeat: space;
+    border-image-slice: 14 33;
+    border-top: var(---toothSize) solid;
+}

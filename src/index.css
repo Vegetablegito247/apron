@@ -1,10 +1,26 @@
-body {
+@import url('https://fonts.cdnfonts.com/css/ala-champ');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,800&display=swap');
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primaryColor);
+}
+
+:root {
+  --primaryColor: #FBEFAF;
+  --secondaryColor: #FAF9F2;
+  --accentColor: #252626;
+  --txtColorBtn: #ffffff;
+  --txtColorTxt: #252626;
+  --fontHead: 'ala champ', sans-serif;
+  --fontTxt: 'DM Sans', sans-serif;
 }
 
 code {
