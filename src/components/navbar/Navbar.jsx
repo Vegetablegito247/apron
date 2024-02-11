@@ -1,10 +1,17 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { FaCaretDown } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import './navbar.css';
 
 function Navbar() {
+    // Navigation to menu
+    const navigate = useNavigate()
+
+    const handleMenu = () => {
+        navigate('/menu');
+    }
+
     return (
         <nav>
             <div className="navCont">
@@ -49,7 +56,7 @@ function Navbar() {
                         <NavLink>Start now</NavLink>
                     </div>
                 </div>
-                <div className="burger">
+                <div onClick={handleMenu} className="burger">
                     <GiHamburgerMenu />
                 </div>
             </div>

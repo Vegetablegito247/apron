@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './menubar.css';
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import { MdClose } from "react-icons/md";
-import { FaCaretDown } from 'react-icons/fa6';
 
 function Menubar() {
     return (
-        <div className='menubar'>
+        <motion.div
+            className='menubar'
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ type: 'spring', duration: 0.5 }}
+        >
             <div className="closebar">
                 <div className="nav-logo">
                     <h3>apron</h3>
                 </div>
-                <div className="menu-close">
+                <NavLink to='..' className="menu-close">
                     <MdClose />
-                </div>
+                </NavLink>
             </div>
             <div className="menu-cont">
                 <ul className="menu-log">
@@ -53,7 +58,7 @@ function Menubar() {
                     </li>
                 </ul>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

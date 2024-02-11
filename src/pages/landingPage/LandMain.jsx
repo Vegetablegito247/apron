@@ -122,12 +122,12 @@ function LandMain() {
       </div>
 
       <div className="testimonial">
-        <div class="test-svg">
+        <div className="test-svg">
           <svg fill="none" viewBox="0 0 590 350">
             <path fill="#FDF5CF" d="M253.3 349.9h165.4L590 77.6 402.6 0 253.3 328v21.9ZM0 349.9h166.9L336.7 77.6 150.7 0 0 328v21.9Z"></path>
           </svg>
         </div>
-        <div class="test-svg2">
+        <div className="test-svg2">
           <svg fill="none" viewBox="0 0 590 350">
             <path fill="#FDF5CF" d="M253.3 349.9h165.4L590 77.6 402.6 0 253.3 328v21.9ZM0 349.9h166.9L336.7 77.6 150.7 0 0 328v21.9Z"></path>
           </svg>
