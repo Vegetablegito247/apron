@@ -13,7 +13,7 @@
     position: relative;
 }
 
-.apron-edge {
+.apron-edge.setup {
     overflow: hidden;
 }
 
@@ -147,16 +147,23 @@
     font-family: var(--fontHead);
 }
 
+.test-svg svg, .test-svg2 svg {
+    width: 590px; 
+    height: 350px;
+}
+
 .test-svg {
     position: absolute;
     top: 0;
     left: -3rem;
+    z-index: -1;
 }
 
 .test-svg2 {
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: -1;
 }
 
 .testimonial-cont {
@@ -180,7 +187,9 @@
     line-height: 120px;
 }
 
-.testimonial-user, .user-content, .user-testify {
+.testimonial-user,
+.user-content,
+.user-testify {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -201,17 +210,21 @@
     column-gap: 20px;
 }
 
-.user-img, .user-img img {
+.user-img,
+.user-img img {
     width: 50px;
     height: 50px;
 }
 
-.user-desc, .username, .user-company {
+.user-desc,
+.username,
+.user-company {
     padding: 5px 0;
     width: 100%;
 }
 
-.username h3, .user-company span {
+.username h3,
+.user-company span {
     font-size: 14px;
     width: 100%;
 }
@@ -236,4 +249,78 @@
 
 .get-apron-price span a {
     color: var(--txtColorTxt);
+}
+
+@media (max-width: 768px) {
+    .apron-edge-content h1 {
+        font-size: 30px;
+        line-height: 35px;
+        padding: 0;
+    }
+
+    .invoice-cont {
+        grid-template-columns: 12fr;
+    }
+
+    .setup-cont,
+    .testimonial-cont {
+        flex-direction: column;
+    }
+
+    .setup-cont {
+        padding: 0;
+        height: fit-content;
+    }
+
+    .setup-txt .grid-head {
+        display: none;
+    }
+
+    .setup-img,
+    .setup-txt,
+    .testimonial-text,
+    .testimonial-user {
+        width: 100%;
+    }
+
+    .testimonial-text {
+        height: fit-content;
+        padding-bottom: 3rem;
+        row-gap: 40px;
+    }
+
+    .testimonial-main-txt h1 {
+        font-size: 70px;
+        line-height: 90px;
+    }
+
+    .get-apron-head {
+        text-align: center;
+    }
+}
+
+@media (max-width: 645px) {
+    .apron-edge,
+    .setup,
+    .testimonial,
+    .get-apron {
+        padding: 4rem 2rem;
+    }
+
+    .setup-txt h1 {
+        font-size: 30px;
+    }
+
+    .test-svg svg, .test-svg2 svg {
+        width: 300px;
+    }
+}
+
+@media (max-width: 575px) {
+    .apron-edge,
+    .setup,
+    .testimonial,
+    .get-apron {
+        padding: 4rem 20px;
+    }
 }

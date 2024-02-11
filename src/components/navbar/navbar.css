@@ -10,6 +10,7 @@ nav {
 
 .navCont,
 .navLogo,
+.menu-bar,
 .business-cont,
 .ul-bus,
 .ul-abt,
@@ -51,13 +52,6 @@ nav {
     position: relative;
 }
 
-.bus-list a, .prc-list a, .abt-list a {
-    text-decoration: none;
-    color: var(--txtColorTxt);
-    padding-bottom: 5px;
-    transition: border linear .7s;
-}
-
 .bus-list a.active, .prc-list a.active, .abt-list a.active {
     border-bottom: 2px solid var(--txtColorTxt);
 }
@@ -95,4 +89,43 @@ nav {
     height: 40px;
     border-radius: 10px;
     background-color: var(--accentColor);
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .business-cont, .log-and-start {
+        display: none;
+    }
+
+    .bus-list a, .prc-list a, .abt-list a {
+        color: var(--txtColorBtn);
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .burger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 5px;
+        border: 2px solid var(--txtColorTxt);
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 645px) {
+    .navCont {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .navCont {
+        padding: 0 20px;
+    }
 }

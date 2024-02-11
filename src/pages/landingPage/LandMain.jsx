@@ -123,12 +123,12 @@ function LandMain() {
 
       <div className="testimonial">
         <div class="test-svg">
-          <svg fill="none" width="590" height="350" viewBox="0 0 590 350">
+          <svg fill="none" viewBox="0 0 590 350">
             <path fill="#FDF5CF" d="M253.3 349.9h165.4L590 77.6 402.6 0 253.3 328v21.9ZM0 349.9h166.9L336.7 77.6 150.7 0 0 328v21.9Z"></path>
           </svg>
         </div>
         <div class="test-svg2">
-          <svg fill="none" width="590" height="350" viewBox="0 0 590 350">
+          <svg fill="none" viewBox="0 0 590 350">
             <path fill="#FDF5CF" d="M253.3 349.9h165.4L590 77.6 402.6 0 253.3 328v21.9ZM0 349.9h166.9L336.7 77.6 150.7 0 0 328v21.9Z"></path>
           </svg>
         </div>
@@ -138,8 +138,7 @@ function LandMain() {
               <h3>Testimonials</h3>
             </div>
             <div className="testimonial-main-txt">
-              <h1>Bye</h1>
-              <h1>Slow.</h1>
+              <h1>Bye Slow</h1>
               <h1>Hi Slick.</h1>
             </div>
           </div>

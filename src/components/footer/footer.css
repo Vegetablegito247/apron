@@ -9,8 +9,14 @@ footer {
     border-top: 2px solid var(--txtColorBtn);
     padding-top: 20px;
     display: grid;
-    grid-template-columns: 2fr 2fr 8fr;
+    grid-template-columns: 4fr 8fr;
     column-gap: 40px;
+}
+
+.foot-main-list {
+    display: flex;
+    column-gap: 30px;
+    width: 100%;
 }
 
 .foot-list {
@@ -33,4 +39,25 @@ footer {
 .foot-list p {
     color: #8E8E8E;
     font-size: 14px;
+}
+
+@media (max-width: 645px) {
+    footer {
+        padding: 2rem;
+    }
+
+    .foot-main-list .foot-list {
+        width: 50%;
+    }
+
+    .footer-cont {
+        grid-template-columns: 12fr;
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    footer {
+        padding: 2rem 20px;
+    }
 }

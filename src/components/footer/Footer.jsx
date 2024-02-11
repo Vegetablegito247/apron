@@ -6,45 +6,47 @@ function Footer() {
     return (
         <footer>
             <div className="footer-cont">
-                <div className="foot-list">
-                    <Link to='' className='foot-nav'>
-                        <span>Business</span>
-                    </Link>
-                    <Link to='' className='foot-nav'>
-                        <span>Finance Professionals</span>
-                    </Link>
-                    <Link to='' className='foot-nav'>
-                        <span>Pay roll</span>
-                    </Link>
-                    <Link to='' className='foot-nav'>
-                        <span>Pay by card</span>
-                    </Link>
-                    <Link to='' className='foot-nav'>
-                        <span>Pay global</span>
-                    </Link>
-                </div>
-                <div className="foot-list">
-                    <Link to='' className='foot-nav'>
-                        <span>How it works</span>
-                    </Link>
-                    <Link to='' className='foot-nav'>
-                        <span>Pricing</span>
-                    </Link>
-                    <Link to='' className='foot-nav'>
-                        <span>Security</span>
-                    </Link>
-                    <Link to='' className='foot-nav'>
-                        <span>Faq</span>
-                    </Link>
-                    <Link to='' className='foot-nav'>
-                        <span>Blog</span>
-                    </Link>
-                    <Link to='' className='foot-nav'>
-                        <span>Our story</span>
-                    </Link>
-                    <Link to='' className='foot-nav'>
-                        <span>Careers</span>
-                    </Link>
+                <div className="foot-main-list">
+                    <div className="foot-list">
+                        <Link to='' className='foot-nav'>
+                            <span>Business</span>
+                        </Link>
+                        <Link to='' className='foot-nav'>
+                            <span>Finance Professionals</span>
+                        </Link>
+                        <Link to='' className='foot-nav'>
+                            <span>Pay roll</span>
+                        </Link>
+                        <Link to='' className='foot-nav'>
+                            <span>Pay by card</span>
+                        </Link>
+                        <Link to='' className='foot-nav'>
+                            <span>Pay global</span>
+                        </Link>
+                    </div>
+                    <div className="foot-list">
+                        <Link to='' className='foot-nav'>
+                            <span>How it works</span>
+                        </Link>
+                        <Link to='' className='foot-nav'>
+                            <span>Pricing</span>
+                        </Link>
+                        <Link to='' className='foot-nav'>
+                            <span>Security</span>
+                        </Link>
+                        <Link to='' className='foot-nav'>
+                            <span>Faq</span>
+                        </Link>
+                        <Link to='' className='foot-nav'>
+                            <span>Blog</span>
+                        </Link>
+                        <Link to='' className='foot-nav'>
+                            <span>Our story</span>
+                        </Link>
+                        <Link to='' className='foot-nav'>
+                            <span>Careers</span>
+                        </Link>
+                    </div>
                 </div>
                 <div className="foot-list">
                     <p>

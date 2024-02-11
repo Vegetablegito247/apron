@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandPage from "./pages/landingPage";
+import Menubar from "./components/menubar/Menubar";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Router>
         <Routes>
           <Route index element={<LandPage />} />
+          <Route path="menu" element={<Menubar />} />
         </Routes>
       </Router>
     </div>
